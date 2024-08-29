@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/NoMoreVillager.iml" filepath="$PROJECT_DIR$/NoMoreVillager.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/NoMoreVillager.main.iml" filepath="$PROJECT_DIR$/.idea/modules/NoMoreVillager.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/io.github.MoYuSOwO.NoMoreVillager.main.iml" filepath="$PROJECT_DIR$/.idea/modules/io.github.MoYuSOwO.NoMoreVillager.main.iml" />
     </modules>
   </component>
 </project>
