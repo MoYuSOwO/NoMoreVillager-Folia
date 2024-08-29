@@ -68,13 +68,18 @@ public class Events implements Listener {
         Chunk chunk = location.getChunk();
         ArrayList<Villager> villagers = new ArrayList<>();
         // 遍历周围的区块
-        Entity[] entities = chunk.getEntities();
-        for (Entity entity : entities) {
-            if (entity instanceof Villager) {
-                Villager villager = (Villager) entity;
-                if (villager.getProfession() == Villager.Profession.NONE || !villager.isAdult()) {
+        for (int x = -4; x <= 4; x++) {
+            for (int z = -4; z <= 4; z++) {
+                Chunk chunk1 = chunk.getWorld().getChunkAt(chunk.getX() + x, chunk.getZ() + z);
+                Entity[] entities = chunk1.getEntities();
+                for (Entity entity : entities) {
+                    if (entity instanceof Villager) {
+                        Villager villager = (Villager) entity;
+                        if (villager.getProfession() == Villager.Profession.NONE || !villager.isAdult()) {
 //                            NoMoreVillager.instance.getLogger().info("搜索到一个无业或未成年");
-                    villagers.add((Villager) entity);
+                            villagers.add((Villager) entity);
+                        }
+                    }
                 }
             }
         }
