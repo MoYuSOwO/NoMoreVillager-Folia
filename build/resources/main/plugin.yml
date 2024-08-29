@@ -1,8 +1,8 @@
 name: NoMoreVillager
-version: '1.0.0'
+version: '1.1'
 main: io.github.MoYuSOwO.noMoreVillager.NoMoreVillager
-api-version: '1.21'
-authors: [MoYuOwO]
+api-version: '1.21.1'
+authors: [ Luming ]
 description: 限制村民行为，防止卡服
 folia-supported: true
 commands:
