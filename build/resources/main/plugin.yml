@@ -4,7 +4,7 @@ main: io.github.MoYuSOwO.noMoreVillager.NoMoreVillager
 api-version: '1.21'
 authors: [MoYuOwO]
 description: 限制村民行为，防止卡服
-folia-support: true
+folia-supported: true
 commands:
   nomorevillager:
     description: NoMoreVillager
